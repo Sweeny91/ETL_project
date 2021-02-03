@@ -25,4 +25,4 @@ Tables were manually created in pgAdmin using the query editor and then finalize
 The tables produced in postgres were then loaded back into jupyter notebook using sqlalchemy to check for accuracy and correctness.
 
 # Deliverables:
-The finalized jupyter notebook containing the entire ETL process can be found in the "project 2" folder and exported csv files can be found in the "output_data" folder.
+The finalized jupyter notebook containing the entire ETL process can be found in the "project 2" folder, exported csv files can be found in the "output_data" folder, and the project report can be found in the word document "etl_project_technical_report".
