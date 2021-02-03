@@ -12,12 +12,12 @@ The datasets created from this proejct could be used to aid data scientists in t
 
 Datasets https://www.kaggle.com/sogun3/uspollution https://www.census.gov/data/datasets/time-series/demo/popest/intercensal-2000-2010-cities-and-towns.html
 
-# Extraction:
+# Extract:
 Two csv files were extracted from kaggle and the US Census Bureau.
   The kaggle dataset combines multiple datasets from the US EPA arranged together in the same format. The dataset has gathered daily readings across the US, from 2000-2016, for four major pollutants (Nitrogen Dioxide, Sulphur Dioxide, Carbon Monoxide, and Ozone). 
   The US Census Bureau dataset contains city and town intercensal population data for all cities that reported to the Census Bureau between 2000-2010. The census is taken once every ten years, so the data between years 2000 and 2010 are estimates.
 
-# Transformation:
+# Transform:
 Transformation tasks needed for analysis preparation included but were not limited to data type transformation, column manipulation, value checks, removal of incomplete records, pivoting, grouping, and table joins. These operations were performed in the jupyter notebook within the "project 2" folder. 
 
 # Load:
