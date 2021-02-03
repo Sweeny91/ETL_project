@@ -1,55 +1,19 @@
-Guidelines for ETL Project
-This document contains guidelines, requirements, and suggestions for Project 1.
+Team members: Erik Watson, Steven Sweeny, and Kathy Nguyen
 
-Team Effort
-Due to the short timeline, teamwork will be crucial to the success of this project! Work closely with your team through all phases of the project to ensure that there are no surprises at the end of the week.
-Working in a group enables you to tackle more difficult problems than you'd be able to working alone. In other words, working in a group allows you to work smart and dream big. Take advantage of it!
+Project Description:
 
-Project Proposal
-Before you start writing any code, remember that you only have one week to complete this project. View this project as a typical assignment from work. Imagine a bunch of data came in and you and your team are tasked with migrating it to a production data base.
-Take advantage of your Instructor and TA support during office hours and class project work time. They are a valuable resource and can help you stay on track.
+Extracting, Transforming and Loading New York and Los Angeles Pollution and Population Data from 2000 - 2010. The goal of the project is to create a dataset that data scientists can use to evaluate the effects of population on various pollution levels over an amount of time.
 
-Finding Data
-Your project must use 2 or more sources of data. We recommend the following sites to use as sources of data:
+Sources of data:
 
+Datasets https://www.kaggle.com/sogun3/uspollution https://www.census.gov/data/datasets/time-series/demo/popest/intercensal-2000-2010-cities-and-towns.html
 
-data.world
+Extraction:
 
+We used 2 datasets from kaggle and the US Census Bureau. The kaggle dataset combines multiple datasets from the US EPA arranged together in the same format. The dataset has gathered daily readings across the US, from 2000-2016, for four major pollutants (Nitrogen Dioxide, Sulphur Dioxide, Carbon Monoxide, and Ozone). The US Census Bureau dataset contains city and town intercensal population data for all cities that reported to the Census Bureau between 2000-2010. The census is taken once every ten years, so the data between years 2000 and 2010 are estimates.
 
-Kaggle
+Transformation:
 
+We extracted both datasets from the websites listed above in csv format. Both dataframes were read into python and cleaned to extract only the pollution and population data for New York City and Los Angeles. Additional columns in the pollution dataset were dropped because they provided useless indicators to the overall goal of the project.
 
-You can also use APIs or data scraped from the web. However, get approval from your instructor first. Again, there is only a week to complete this!
-
-Data Cleanup & Analysis
-Once you have identified your datasets, perform ETL on the data. Make sure to plan and document the following:
-
-
-The sources of data that you will extract from.
-
-
-The type of transformation needed for this data (cleaning, joining, filtering, aggregating, etc).
-
-
-The type of final production database to load the data into (relational or non-relational).
-
-
-The final tables or collections that will be used in the production database.
-
-
-You will be required to submit a final technical report with the above information and steps required to reproduce your ETL process.
-
-Project Report
-At the end of the week, your team will submit a Final Report that describes the following:
-
-
-Extract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
-
-
-Transform: what data cleaning or transformation was required.
-
-
-Load: the final database, tables/collections, and why this was chosen.
-
-
-Please upload the report to Github and submit a link to Bootcampspot.
+Load We used SQL Alchemy and Postgres/pgAdmin SQL transfer out final data. Tables were created using pgAdmin.
