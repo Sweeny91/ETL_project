@@ -6,7 +6,7 @@ The goal of this project was to display the ability of performing ETL operations
 
 Extracting, Transforming and Loading operations were performed on Pollution and Population Data from 2000 - 2010.
 In this project the scope was limited to two major cities, New York City and Los Angeles. 
-The datasets created from this proejct could be used to aid data scientists in the evaluation of the effects of population on various pollution levels over the years.
+The datasets created from this project could be used to aid data scientists in the evaluation of the effects of population on various pollution levels over the years.
 
 # Sources of data:
 
